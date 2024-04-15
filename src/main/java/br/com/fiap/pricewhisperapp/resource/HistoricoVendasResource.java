@@ -13,7 +13,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.util.List;
 
 @RestController
-@RequestMapping("/historicos-vendas")
+@RequestMapping("/historico-vendas")
 public class HistoricoVendasResource {
 
     @Autowired
