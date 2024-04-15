@@ -64,9 +64,9 @@
     <ul>
         <li>Corpo da requisição (JSON):
             <pre><code>{
-		"nome": "Marca Y",
-		"descricao": "Descrição da Marca Y"
-	}</code></pre>
+	"nome": "Marca Y",
+	"descricao": "Descrição da Marca Y"
+}</code></pre>
         </li>
     </ul>
 </ul>
