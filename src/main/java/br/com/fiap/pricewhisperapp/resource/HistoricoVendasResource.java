@@ -1,9 +1,9 @@
 package br.com.fiap.pricewhisperapp.resource;
 
-import br.com.fiap.pricewhisper.dto.request.HistoricoVendasRequest;
-import br.com.fiap.pricewhisper.dto.response.HistoricoVendasResponse;
-import br.com.fiap.pricewhisper.entity.HistoricoVendas;
-import br.com.fiap.pricewhisper.service.HistoricoVendasService;
+import br.com.fiap.pricewhisperapp.dto.request.HistoricoVendasRequest;
+import br.com.fiap.pricewhisperapp.dto.response.HistoricoVendasResponse;
+import br.com.fiap.pricewhisperapp.entity.HistoricoVendas;
+import br.com.fiap.pricewhisperapp.service.HistoricoVendasService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;

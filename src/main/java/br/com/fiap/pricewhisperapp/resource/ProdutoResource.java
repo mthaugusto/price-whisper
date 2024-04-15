@@ -1,10 +1,10 @@
 package br.com.fiap.pricewhisperapp.resource;
 
 
-import br.com.fiap.pricewhisper.dto.request.ProdutoRequest;
-import br.com.fiap.pricewhisper.dto.response.ProdutoResponse;
-import br.com.fiap.pricewhisper.entity.Produto;
-import br.com.fiap.pricewhisper.service.ProdutoService;
+import br.com.fiap.pricewhisperapp.dto.request.ProdutoRequest;
+import br.com.fiap.pricewhisperapp.dto.response.ProdutoResponse;
+import br.com.fiap.pricewhisperapp.entity.Produto;
+import br.com.fiap.pricewhisperapp.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
