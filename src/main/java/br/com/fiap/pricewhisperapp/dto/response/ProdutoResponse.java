@@ -13,7 +13,6 @@ public record ProdutoResponse(
         BigDecimal precoVenda,
         BigDecimal precoMinimo,
         Integer estoque,
-        Long marcaId,
         Long modeloId,
         Long categoriaId
 ) {

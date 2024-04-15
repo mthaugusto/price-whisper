@@ -9,7 +9,6 @@ public record ProdutoRequest(
         BigDecimal precoVenda,
         BigDecimal precoMinimo,
         Integer estoque,
-        Long marcaId,
         Long modeloId,
         Long categoriaId
 ) {

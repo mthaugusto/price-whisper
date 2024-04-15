@@ -36,7 +36,6 @@ public class ProdutoService implements ServiceDTO<Produto, ProdutoRequest, Produ
                 .precoVenda(r.precoVenda())
                 .precoMinimo(r.precoMinimo())
                 .estoque(r.estoque())
-                .marca(marcaRepository.findById(r.marcaId()).orElse(null))
                 .modelo(modeloRepository.findById(r.modeloId()).orElse(null))
                 .categoria(categoriaRepository.findById(r.categoriaId()).orElse(null))
                 .build();
@@ -53,7 +52,6 @@ public class ProdutoService implements ServiceDTO<Produto, ProdutoRequest, Produ
                 .precoVenda(e.getPrecoVenda())
                 .precoMinimo(e.getPrecoMinimo())
                 .estoque(e.getEstoque())
-                .marcaId(e.getMarca() != null ? e.getMarca().getId() : null)
                 .modeloId(e.getModelo() != null ? e.getModelo().getId() : null)
                 .categoriaId(e.getCategoria() != null ? e.getCategoria().getId() : null)
                 .build();

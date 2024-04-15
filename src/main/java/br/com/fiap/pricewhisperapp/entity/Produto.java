@@ -37,14 +37,6 @@ public class Produto {
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(
-            name = "MARCA",
-            referencedColumnName = "ID_MARCA"
-            , foreignKey = @ForeignKey(name = "FK_PRODUTO_MARCA")
-    )
-    private Marca marca;
-
-    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
-    @JoinColumn(
             name = "CATEGORIA",
             referencedColumnName = "ID_CATEGORIA"
             , foreignKey = @ForeignKey(name = "FK_PRODUTO_CATEGORIA")
