@@ -30,7 +30,10 @@
 
 <h2>Imagem dos Diagramas</h2>
 
-<p>Coloque aqui a imagem dos diagramas do projeto.</p>
+![Diagrama de Classes](https://github.com/mthaugusto/price-whisper/blob/main/documentacao/Diagrama%20de%20Classes.png)
+
+![Diagrama UML](https://github.com/mthaugusto/price-whisper/blob/main/documentacao/Diagrama%20UML.png)
+
 
 <h2>Vídeo de Apresentação</h2>
 
