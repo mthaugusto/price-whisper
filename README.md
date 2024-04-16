@@ -1,6 +1,6 @@
 <h1>Price Whisper</h1>
 
-<h2>Integrantes do Grupo</h2>
+<h2>OM. CORP - Integrantes do Grupo</h2>
 
 <ul>
     <li><strong>Matheus Augusto Leite</strong> - RM99697</li>
@@ -10,7 +10,6 @@
     <li><strong>Gabriel Eringer de Oliveira</strong> - RM99632</li>
 </ul>
 
-<p>Cada integrante foi responsável por diferentes partes do projeto, como desenvolvimento de funcionalidades, criação de interfaces, integração de APIs, testes e documentação.</p>
 
 <h2>Como Rodar a Aplicação</h2>
 
@@ -28,11 +27,26 @@
     </li>
 </ol>
 
+<h2>Importar Testes no Postman</h2>
+<p>Para importar testes no Postman, siga estas etapas:</p>
+
+<ol>
+    <li><strong>Abra o Postman:</strong> Inicie o aplicativo Postman no seu computador.</li>
+    <li><strong>Vá para a aba "Collections":</strong> No painel esquerdo, encontre e clique em "Collections" para ver as coleções existentes.</li>
+    <li><strong>Inicie o processo de importação:</strong> Na parte superior do painel "Collections", clique no botão "Import".</li>
+    <li><strong>Selecione o arquivo:</strong> Clique em "Upload Files" para selecionar o arquivo de teste que você deseja importar. Certifique-se de que o arquivo esteja em um formato compatível, como JSON ou coleção Postman.</li>
+    <li><strong>Complete a importação:</strong> Depois de selecionar o arquivo, clique em "Import" para iniciar a importação.</li>
+    <li><strong>Verifique as coleções:</strong> Após a importação, suas coleções de testes estarão disponíveis na aba "Collections" à esquerda. Você pode agora visualizar e executar os testes importados.</li>
+</ol>
+
+
 <h2>Imagem dos Diagramas</h2>
 
 ![Diagrama de Classes](https://github.com/mthaugusto/price-whisper/blob/main/documentacao/Diagrama%20de%20Classes.png)
 
 ![Diagrama UML](https://github.com/mthaugusto/price-whisper/blob/main/documentacao/Diagrama%20UML.png)
+
+![DER](https://github.com/mthaugusto/price-whisper/blob/main/documentacao/DER.png)
 
 
 <h2>Vídeo de Apresentação</h2>
