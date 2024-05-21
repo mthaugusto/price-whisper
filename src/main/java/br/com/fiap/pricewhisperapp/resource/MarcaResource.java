@@ -5,6 +5,8 @@ import br.com.fiap.pricewhisperapp.dto.response.MarcaResponse;
 import br.com.fiap.pricewhisperapp.entity.Marca;
 import br.com.fiap.pricewhisperapp.service.MarcaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -20,11 +22,27 @@ public class MarcaResource {
     private MarcaService service;
 
     @GetMapping
-    public ResponseEntity<List<MarcaResponse>> findAll() {
-        List<MarcaResponse> marcas = service.findAll().stream()
+    public ResponseEntity<List<MarcaResponse>> findAll(
+            @RequestParam(name = "nome", required = false) String nome
+    ) {
+        Marca marca = Marca.builder()
+                .nome(nome)
+                .build();
+
+        ExampleMatcher matcher = ExampleMatcher
+                .matchingAll()
+                .withIgnoreNullValues()
+                .withIgnoreCase();
+
+        Example<Marca> example = Example.of(marca, matcher);
+
+        List<Marca> encontradas = service.findAll(example);
+
+        List<MarcaResponse> respostas = encontradas.stream()
                 .map(service::toResponse)
                 .toList();
-        return ResponseEntity.ok(marcas);
+
+        return ResponseEntity.ok(respostas);
     }
 
     @GetMapping("/{id}")

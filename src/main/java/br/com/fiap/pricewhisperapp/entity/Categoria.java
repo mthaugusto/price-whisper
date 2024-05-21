@@ -19,7 +19,11 @@ public class Categoria {
     @SequenceGenerator(sequenceName = "SQ_CATEGORIA", name = "SQ_CATEGORIA", allocationSize = 1, initialValue = 1)
     @Column(name="ID_CATEGORIA")
     private Long id;
+
+    @Column(name="NM_CATEGORIA")
     private String nome;
+
+    @Column(name="DS_CATEGORIA")
     private String descricao;
 
 }

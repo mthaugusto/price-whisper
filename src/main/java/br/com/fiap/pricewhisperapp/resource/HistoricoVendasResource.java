@@ -19,6 +19,7 @@ public class HistoricoVendasResource {
     @Autowired
     private HistoricoVendasService service;
 
+    /*TO DO: Implementar o método findAll com parâmetros para a classe HistoricoVendas */
     @GetMapping
     public ResponseEntity<List<HistoricoVendasResponse>> findAll() {
         List<HistoricoVendasResponse> historicos = service.findAll().stream()

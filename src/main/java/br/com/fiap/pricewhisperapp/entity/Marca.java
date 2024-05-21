@@ -21,7 +21,9 @@ public class Marca {
     @Column(name="ID_MARCA")
     private Long id;
 
+    @Column(name="NM_MARCA")
     private String nome;
 
+    @Column(name="DS_MARCA")
     private String descricao;
 }

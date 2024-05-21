@@ -23,17 +23,23 @@ public class Produto {
     @Column(name = "ID_PRODUTO")
     private Long id;
 
+    @Column(name = "NM_PRODUTO")
     private String nome;
 
+    @Column(name = "DS_PRODUTO")
     private String descricao;
 
+    @Column(name="PRECO_CUSTO")
     private BigDecimal precoCusto;
 
+    @Column(name="PRECO_VENDA")
     private BigDecimal precoVenda;
 
+    @Column(name="PRECO_MINIMO")
     private BigDecimal precoMinimo;
 
-    private int estoque;
+    @Column(name="ESTOQUE")
+    private Integer estoque;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
     @JoinColumn(

@@ -23,8 +23,13 @@ public class HistoricoVendas {
     @Column(name="ID_VENDA")
     private Long id;
 
+    @Column(name="DATA_VENDA")
     private LocalDate dataVenda;
+
+    @Column(name="PRECO_VENDA")
     private BigDecimal precoVenda;
+
+    @Column(name="QTD_VENDIDA")
     private int quantidadeVendida;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})

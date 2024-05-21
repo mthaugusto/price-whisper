@@ -5,6 +5,8 @@ import br.com.fiap.pricewhisperapp.dto.response.ModeloResponse;
 import br.com.fiap.pricewhisperapp.entity.Modelo;
 import br.com.fiap.pricewhisperapp.service.ModeloService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -20,11 +22,27 @@ public class ModeloResource {
     private ModeloService service;
 
     @GetMapping
-    public ResponseEntity<List<ModeloResponse>> findAll() {
-        List<ModeloResponse> modelos = service.findAll().stream()
+    public ResponseEntity<List<ModeloResponse>> findAll(
+            @RequestParam(name = "nome", required = false) String nome
+    ) {
+        Modelo modelo = Modelo.builder()
+                .nome(nome)
+                .build();
+
+        ExampleMatcher matcher = ExampleMatcher
+                .matchingAll()
+                .withIgnoreNullValues()
+                .withIgnoreCase();
+
+        Example<Modelo> example = Example.of(modelo, matcher);
+
+        List<Modelo> encontrados = service.findAll(example);
+
+        List<ModeloResponse> respostas = encontrados.stream()
                 .map(service::toResponse)
                 .toList();
-        return ResponseEntity.ok(modelos);
+
+        return ResponseEntity.ok(respostas);
     }
 
     @GetMapping("/{id}")

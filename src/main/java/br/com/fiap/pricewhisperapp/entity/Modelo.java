@@ -21,8 +21,10 @@ public class Modelo {
     @Column(name="ID_MODELO")
     private Long id;
 
+    @Column(name="NM_MODELO")
     private String nome;
 
+    @Column(name="DS_MODELO")
     private String descricao;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
