@@ -144,4 +144,25 @@
     </ul>
 </ul>
 
+<h3>Carrinho</h3>
+
+<ul>
+    <li><strong>GET /historico-vendas</strong>: Retorna uma lista de todo o histórico de vendas.</li>
+    <li><strong>GET /historico-vendas/{id}</strong>: Retorna um histórico de vendas específico pelo ID.</li>
+    <li><strong>POST /historico-vendas</strong>: Cria um novo registro de histórico de vendas com os dados fornecidos.</li>
+    <ul>
+        <li>Corpo da requisição (JSON):
+            <pre><code>{
+    "quantidadeProdutos": 3,
+    "subTotal": 150.0,
+    "produtoId": 123456,
+    "historicoVendaId": 789012
+}</code></pre>
+        </li>
+    </ul>
+</ul>
+
+
+
+
 <p>Para informações mais detalhadas sobre os endpoints, consulte a documentação de código ou use ferramentas de API como Postman para explorar a API.</p>
