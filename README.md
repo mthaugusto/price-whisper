@@ -129,6 +129,24 @@
 <h3>Histórico de Vendas</h3>
 
 <ul>
+    <li><strong>GET /historico-vendas</strong>: Retorna uma lista de todo o histórico de vendas.</li>
+    <li><strong>GET /historico-vendas/{id}</strong>: Retorna um histórico de vendas específico pelo ID.</li>
+    <li><strong>POST /historico-vendas</strong>: Cria um novo registro de histórico de vendas com os dados fornecidos.</li>
+    <ul>
+        <li>Corpo da requisição (JSON):
+            <pre><code>{
+  "produtoId": 1, 
+  "dataVenda": "2023-04-14", 
+  "precoVenda": 22.00,
+  "quantidadeVendida": 10
+}</code></pre>
+        </li>
+    </ul>
+</ul>
+
+<h3>Carrinho</h3>
+
+<ul>
     <li><strong>GET /carrinho</strong>: Retorna uma lista de todo o histórico de vendas.</li>
     <li><strong>GET /carrinho/{id}</strong>: Retorna um histórico de vendas específico pelo ID.</li>
     <li><strong>POST /carrinho</strong>: Cria um novo registro de histórico de vendas com os dados fornecidos.</li>
