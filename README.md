@@ -57,7 +57,15 @@
 <h3>Categorias</h3>
 
 <ul>
-    <li><strong>GET /categorias</strong>: Retorna uma lista de todas as categorias.</li>
+    <li><strong>GET /categorias</strong>: Retorna uma lista de todas as categorias.
+        <ul>
+            <li><strong>Parâmetros de consulta:</strong> 
+                <ul>
+                    <li><strong>nome:</strong> Filtra as categorias pelo nome.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
     <li><strong>GET /categorias/{id}</strong>: Retorna uma categoria específica pelo ID.</li>
     <li><strong>POST /categorias</strong>: Cria uma nova categoria com os dados fornecidos.</li>
     <ul>
@@ -74,7 +82,15 @@
 <h3>Marcas</h3>
 
 <ul>
-    <li><strong>GET /marcas</strong>: Retorna uma lista de todas as marcas.</li>
+    <li><strong>GET /marcas</strong>: Retorna uma lista de todas as marcas.
+        <ul>
+            <li><strong>Parâmetros de consulta:</strong> 
+                <ul>
+                    <li><strong>nome:</strong> Filtra as marcas pelo nome.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
     <li><strong>GET /marcas/{id}</strong>: Retorna uma marca específica pelo ID.</li>
     <li><strong>POST /marcas</strong>: Cria uma nova marca com os dados fornecidos.</li>
     <ul>
@@ -90,7 +106,15 @@
 <h3>Modelos</h3>
 
 <ul>
-    <li><strong>GET /modelos</strong>: Retorna uma lista de todos os modelos.</li>
+    <li><strong>GET /modelos</strong>: Retorna uma lista de todos os modelos.
+        <ul>
+            <li><strong>Parâmetros de consulta:</strong> 
+                <ul>
+                    <li><strong>nome:</strong> Filtra os modelos pelo nome.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
     <li><strong>GET /modelos/{id}</strong>: Retorna um modelo específico pelo ID.</li>
     <li><strong>POST /modelos</strong>: Cria um novo modelo com os dados fornecidos.</li>
     <ul>
@@ -107,7 +131,15 @@
 <h3>Produtos</h3>
 
 <ul>
-    <li><strong>GET /produtos</strong>: Retorna uma lista de todos os produtos.</li>
+    <li><strong>GET /produtos</strong>: Retorna uma lista de todos os produtos.
+        <ul>
+            <li><strong>Parâmetros de consulta:</strong> 
+                <ul>
+                    <li><strong>nome:</strong> Filtra os produtos pelo nome.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
     <li><strong>GET /produtos/{id}</strong>: Retorna um produto específico pelo ID.</li>
     <li><strong>POST /produtos</strong>: Cria um novo produto com os dados fornecidos.</li>
     <ul>
