@@ -23,11 +23,18 @@ public class Carrinho {
     @Column(name="ID_CARRINHO")
     private Long id;
 
+    @Column(name="QT_PRODUTOS")
     private int quantidadeProdutos;
 
-    private Double sub_total;
+    @Column(name="VL_SUBTOTAL")
+    private Double subTotal;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "PRODUTO", referencedColumnName = "ID_PRODUTO", foreignKey = @ForeignKey(name = "FK_CARRINHO_PRODUTO"))
     private Produto produto;
 
-    private HistoricoVendas venda;
+
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.MERGE, CascadeType.PERSIST})
+    @JoinColumn(name = "VENDA", referencedColumnName = "ID_VENDA", foreignKey = @ForeignKey(name = "FK_CARRINHO_HISTORICO_VENDA"))
+    private HistoricoVendas historicoVenda;
 }
