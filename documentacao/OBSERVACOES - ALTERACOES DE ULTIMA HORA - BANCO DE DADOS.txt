@@ -1,1 +1,0 @@
-Conforme conversado com o professor Benefrancis, o nosso professor de Banco de Dados solicitou alterações no nosso banco (inclusão da entidade  DE COMPRAS) e essas alterações serão implementadas na nossa API para a segunda entrega (marcada como A IMPLEMENTAR no cronograma de atividades).
